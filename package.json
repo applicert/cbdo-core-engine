@@ -1,0 +1,30 @@
+{
+  "name": "@applicert/cbdo-core-engine",
+  "version": "0.1.0",
+  "description": "CBDO Core Engine — query-responsive verifiable credential execution layer",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "demo": "node demo/agepass-demo.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "keywords": [
+    "cbdo",
+    "verifiable-credentials",
+    "age-verification",
+    "privacy",
+    "zero-knowledge",
+    "w3c-vc"
+  ],
+  "author": "William Brian Williams <william@applicert.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

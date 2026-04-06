@@ -1,0 +1,71 @@
+{
+  "id": "agepass-v1",
+  "version": "1.0.0",
+  "name": "AgePass",
+  "description": "Privacy-preserving age verification. Returns a boolean answer to age threshold queries without disclosing date of birth or any other personal data.",
+  "allowedQueries": [
+    {
+      "type": "AGE_THRESHOLD",
+      "description": "Is the credential holder above a specified age threshold?",
+      "parameters": [
+        {
+          "name": "threshold",
+          "type": "integer",
+          "required": true,
+          "constraints": {
+            "minimum": 13,
+            "maximum": 25
+          }
+        }
+      ],
+      "responseType": "boolean",
+      "allowedResponseFields": [
+        "result",
+        "proof",
+        "issuerId",
+        "profileId",
+        "timestamp",
+        "auditRef"
+      ],
+      "credentialFields": ["dateOfBirth"]
+    }
+  ],
+  "consentRules": {
+    "requireExplicitConsent": true,
+    "defaultConsent": false,
+    "consentExpiry": 86400,
+    "renewalPolicy": "prompt",
+    "scopeGranularity": "queryType"
+  },
+  "dataMinimization": {
+    "maxResponseFields": 6,
+    "prohibitedFields": [
+      "dateOfBirth",
+      "age",
+      "birthYear",
+      "birthMonth",
+      "birthDay",
+      "dob"
+    ],
+    "proofRequired": true
+  },
+  "overridePolicy": {
+    "overridePermitted": true,
+    "threshold": 2,
+    "totalParties": 3,
+    "authorizedParties": [
+      {
+        "role": "KEY_CUSTODIAN",
+        "did": "did:example:key-custodian"
+      },
+      {
+        "role": "ISSUING_TA",
+        "did": "did:example:issuing-ta"
+      },
+      {
+        "role": "LEGAL_COMPLIANCE",
+        "did": "did:example:legal-compliance"
+      }
+    ]
+  }
+}
