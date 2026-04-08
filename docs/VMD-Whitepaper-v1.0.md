@@ -8,7 +8,7 @@ Modern digital systems are built on a flawed assumption: that trust requires exp
 
 Verifiable Minimal Disclosure (VMD) offers a different model. Built on emerging standards such as W3C Verifiable Credentials, VMD extends them into a complete interaction and governance model. Rather than sharing data, VMD allows systems to ask questions of data and receive verifiable answers – without exposing the underlying information. This enables privacy-preserving verification, user ownership, and controlled disclosure, while satisfying real-world requirements such as legal access and fraud detection.
 
-In 2026, with age-verification mandates accelerating globally (including Australia’s enforcement starting March 9 for porn, R-rated games, AI chatbots and more), the need for such an architecture has become urgent. **AgePass** – the first specialized VMD profile – directly addresses this regulatory pressure while preserving adult privacy.
+In 2026, with age-verification mandates accelerating globally (including Australia’s enforcement, which took effect March 9, covering porn, R-rated games, AI chatbots and more), the need for such an architecture has become urgent. **AgePass** – the first specialized VMD profile – directly addresses this regulatory pressure while preserving adult privacy.
 
 *VMD represents a foundational shift: from data exchange to truth verification.*
 
@@ -84,7 +84,7 @@ Key characteristics:
 
 * All interactions are evaluated against explicit rules and user-defined consent requirements.
 
-  **All activity is auditable ** 
+  **All activity is auditable** 
 
 * Each interaction produces a verifiable record, enabling accountability without exposing sensitive data.
 
@@ -124,16 +124,15 @@ A VMD system is not simply a secure container for data. It is a **policy-enforce
 * All interactions are mediated through constrained queries   
 * Responses are generated, not retrieved 
 
-In this model, data becomes **queryable under strict control**, and verification occurs without transferring or exposing the underlying information.
+In this model, data becomes **accessible only through controlled, policy-enforced queries**, and verification occurs without transferring or exposing the underlying information.
 
 # **4\. Architecture**
 
 A VMD consists of three primary layers that enforce strict separation between data storage, policy definition, and execution logic.
 
-*Figure 1 – VMD Internal Architecture*  
-*![VMD_Internal_Architecture](./images/VMD_Internal_Architecture.png)*
+*![VMD_Internal_Architecture](./images/VMD_Internal_Architecture.svg)*
 
-## **4.1 Data Layer (Encrypted Payload)**
+## **4.1 Data Layer (Protected Data)**
 
 Stores raw user data – fully encrypted at rest and in transit. Never directly exposed during standard operations.
 
@@ -145,12 +144,11 @@ Defines the rules governing each VMD-based credential: allowed queries, permissi
 
 ## **4.3 Core Engine (Execution Layer)**
 
-Handles all interactions: query validation, consent enforcement, rule application, data minimization, proof generation, and audit logging. This layer transforms VMD-based credentials from static containers into active verification systems.
+Handles all interactions: query validation, consent enforcement, rule application, data minimization, proof generation, and audit logging. This layer transforms VMD-based credentials from passive records into active verification systems.
 
 # **5\. Operational Flow**
 
-*Figure 2 – VMD Query Processing Flow*
-*![VMD_Query_Processing_Flow](./images/VMD_Query_Processing_Flow.png)*
+*![VMD_Query_Processing_Flow](./images/VMD_Query_Processing_Flow.svg)*
 
 This flow represents the standard interaction pattern for all VMD queries, regardless of profile type:
 
@@ -169,7 +167,7 @@ This flow represents the standard interaction pattern for all VMD queries, regar
 ## **6.1 Data Minimization**
 
 Only the necessary answer is shared – never the full dataset.  
-   
+
 ## **6.2 Query-Based Interaction**
 
 Systems do not access data directly; they query it. This keeps the data layer isolated from external parties at all times.
@@ -189,12 +187,13 @@ All responses are cryptographically provable and auditable. Trust does not depen
 ## **6.6 Controlled Override**
 
 VMD supports lawful and emergency access – legal warrants, medical emergencies, fraud investigations – under strict, auditable conditions. This ensures real-world regulatory alignment without weakening everyday privacy guarantees.
-  
+
+
 # **7\. Standardized VMD Profiles**
 
 Profiles define domain-specific implementations of the VMD model. 
 
-*Figure 3 – VMD Profile Interaction Model*![VMD_Profile_Interaction_Model](./images/VMD_Profile_Interaction_Model.png)*
+*![VMD_Profile_Interaction_Model](./images/VMD_Profile_Interaction_Model.svg)*
 
 ## **7.1 AgePass**
 
@@ -229,7 +228,7 @@ Numerous reusable age-assurance pilots and commercial offerings have emerged by 
 
 VMD builds on and extends these approaches by providing a cohesive, enforceable architecture built directly on W3C Verifiable Credentials 2.0 and BBS+ as the cryptographic backbone. What sets VMD-based credentials apart is an active Core Engine that transforms static credentials into policy-enforced, query-responsive systems: every interaction is validated against a strict profile, user consent is programmatically enforced, responses are strictly minimized, and every action is auditable by design.
 
-Most importantly, VMD incorporates a governed threshold-cryptography override for lawful and emergency access that is cryptographically prevented from unilateral abuse – a critical real-world requirement that many token-based pilots address only through policy or third-party trust. By adding these governance, consent, and exception layers on top of existing standards and pilots, VMD (starting with AgePass) deliver stronger privacy guarantees, better regulatory alignment, and true user ownership at scale, rather than simply moving the trust boundary to a new intermediary network.
+Most importantly, VMD incorporates a governed threshold-cryptography override for lawful and emergency access that is cryptographically prevented from unilateral abuse – a critical real-world requirement that many token-based pilots address only through policy or third-party trust. By adding these governance, consent, and exception layers on top of existing standards and pilots, VMD (starting with AgePass) delivers stronger privacy guarantees, better regulatory alignment, and true user ownership at scale, rather than simply moving the trust boundary to a new intermediary network.
 
 # **8\. Paradigm Shift**
 
@@ -240,7 +239,7 @@ VMD reorients every layer of the data interaction model:
 | Share data | **Answer questions** |
 | Trust documents | **Verify proofs** |
 | Over-disclosure | **Minimal disclosure** |
-| Centralized storage | **User-owned objects** |
+| Centralized storage | **User-controlled verification systems** |
 
 # **9\. Trust Authorities and Governance Model**
 
@@ -258,7 +257,7 @@ Rather than storing and sharing raw data, Trust Authorities verify data once, is
 
 **Attestation (Issuance Layer)**
 
-Trust Authorities validate real-world claims and bind them to a VMD-based credential – performing identity verification, credential validation, and data authenticity checks. Output: a signed VMD with cryptographic proof of origin.
+Trust Authorities validate real-world claims and bind them to a VMD-based credential – performing identity verification, credential validation, and data authenticity checks. Output: a signed VMD-based credential with cryptographic proof of origin.
 
 Examples: a bank issues an AgePass VMD-based credential; a hospital issues a MedPass VMD-based credential; Applicert issues a professional VMD-based credential.
 
@@ -344,7 +343,7 @@ CareerPass in practice – an employer queries:
 
 ## **10.4 Standards Alignment and Foundations**
 
-VMD is deliberately designed to build upon mature, open standards rather than replace them. In particular, they leverage the **W3C Verifiable Credentials Data Model v2.0** (Recommendation, May 2025\) as the foundational backbone for the Data Layer, Profile/Schema Layer, and core Verifiability mechanisms.
+VMD is deliberately designed to build upon mature, open standards rather than replace them. In particular, it leverages the **W3C Verifiable Credentials Data Model v2.0** (Recommendation, May 2025\) as the foundational backbone for the Data Layer, Profile/Schema Layer, and core Verifiability mechanisms.
 
 Combined with the W3C Data Integrity BBS+ cryptosuite for selective disclosure, VMD inherits strong interoperability, existing wallet support, and proven cryptographic tooling. The VMD **Core Engine** then adds the missing active layers: strict query-based interaction, enforceable consent rules, data-minimization guarantees, comprehensive audit logging, and a governed threshold-cryptography override for lawful access.
 
@@ -353,9 +352,7 @@ This approach positions VMD as a natural evolution of ongoing pilots (including 
 # **11\. Cryptographic Foundations**
 
 VMD is built on well-established cryptographic techniques used in modern security infrastructure – including secure web browsing (TLS), digital identity frameworks, and government-grade authentication systems. This section explains how these techniques work together in the VMD model.
-
-*Figure 4 – VMD Cryptographic Verification Flow*
-*![VMD_Cryptographic_Verification_Flow](./images/VMD_Cryptographic_Verification_Flow.png)*
+*![VMD_Cryptographic_Verification_Flow](./images/VMD_Cryptographic_Verification_Flow.svg)*
 
 *This diagram illustrates how VMD combines selective disclosure (BBS+), zero-knowledge proofs, and threshold cryptography to enable verifiable answers without exposing underlying data.*
 
@@ -390,7 +387,7 @@ Every VMD-based credential carries a chain of cryptographic signatures:
 
 * The Trust Authority signs the original data at issuance, attesting to its accuracy
 
-* The VMD holds that signature as proof of legitimacy
+* The VMD-based credential holds that signature as proof of legitimacy
 
 * When a query is answered, the response carries a proof that it was derived from that signed data
 
@@ -434,8 +431,6 @@ VMD redefines how data functions in digital systems. The shift is not incrementa
 
 In doing so, VMD enables privacy, security, efficiency, and verifiable trust to coexist at scale – across industries, jurisdictions, and use cases.
 
-# 
-
 # **14\. Final Statement**
 
 *VMD-based credentials are not files. They are interactive, rule-bound truth systems.*
@@ -444,8 +439,8 @@ VMD systems are policy-enforced, query-responsive verification systems that retu
 
 As such, they represent not just a product innovation, but a protocol-level evolution of digital trust infrastructure – one built to meet the demands of a world that can no longer afford to equate access with trust.
 
-This whitepaper is accompanied by a reference implementation: [https://github.com/applicert/vmd-core-engine](https://github.com/applicert/vmd-core-engine) 
 
-This project was previously developed under the working term "CBDO" (Consent-Based Data Objects).
+
+This whitepaper is accompanied by a reference implementation: [https://github.com/applicert/vmd-core-engine](https://github.com/applicert/vmd-core-engine) 
 
 © 2026 William Brian Williams. All rights reserved.

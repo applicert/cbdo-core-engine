@@ -1,0 +1,26 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2036 353" width="2036" height="353"><style>tspan{white-space:pre}.a{fill:none;stroke:#6b7280;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}.b{fill:none;stroke:#22c55e;stroke-linecap:round;stroke-linejoin:round;stroke-width:4}.c{fill:none;stroke:#ef4444;stroke-linecap:round;stroke-linejoin:round;stroke-width:4}.d{font-size: 20px;fill: #6b7280;font-family: "Arial"}.e{fill:#f8fafc;stroke:#6b7280;stroke-width:2.5}.f{font-size: 13px;fill: #000000;font-weight: 400;font-family: "LiberationSans", "Liberation Sans"}.g{font-size: 16px;fill: #374151;font-family: "Arial"}</style><path fill-rule="evenodd" class="a" d="m1801 88h50"/><path fill-rule="evenodd" class="b" d="m520 187h58v-60h82"/><path fill-rule="evenodd" class="c" d="m770 153h78v140h75"/><path fill-rule="evenodd" class="c" d="m513 263h218v45h210"/><path fill-rule="evenodd" class="a" d="m148 222h70"/><path fill-rule="evenodd" class="a" d="m354 222h70"/><text transform="translate(825.2,19)"><tspan x="0" y="0" class="d">Figure 2 – VMD Query Processing Flow
+</tspan></text><path fill-rule="evenodd" class="e" d="m18 182h148c3.3 0 6 2.7 6 6v68c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-68c0-3.3 2.7-6 6-6z"/><text transform="translate(58,219)"><tspan x="0" y="0" class="f">User VMD
+</tspan></text><text transform="translate(71,234)"><tspan x="0" y="0" class="f">Wallet
+</tspan></text><path fill-rule="evenodd" class="e" d="m224 182h148c3.3 0 6 2.7 6 6v68c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-68c0-3.3 2.7-6 6-6z"/><text transform="translate(251,224)"><tspan x="0" y="0" class="f">Incoming Query
+</tspan></text><path fill-rule="evenodd" class="e" d="m483 149.5l67.5 72.5-67.5 72.5-67.5-72.5z"/><text transform="translate(463,203)"><tspan x="0" y="0" class="f">Query
+</tspan></text><text transform="translate(453,222)"><tspan x="0" y="0" class="f">Allowed by
+</tspan></text><text transform="translate(462,240)"><tspan x="0" y="0" class="f">Profile?
+</tspan></text><path fill-rule="evenodd" class="e" d="m728 54.5l67.5 72.5-67.5 72.5-67.5-72.5z"/><text transform="translate(714,109)"><tspan x="0" y="0" class="f">User
+</tspan></text><text transform="translate(703,126)"><tspan x="0" y="0" class="f">Consent
+</tspan></text><text transform="translate(703,143)"><tspan x="0" y="0" class="f">Granted?
+</tspan></text><path fill-rule="evenodd" class="e" d="m928 43h168c3.3 0 6 2.7 6 6v78c0 3.3-2.7 6-6 6h-168c-3.3 0-6-2.7-6-6v-78c0-3.3 2.7-6 6-6z"/><text transform="translate(953,89)"><tspan x="0" y="0" class="f">Profile Rules
+</tspan></text><text transform="translate(1029,89)"><tspan x="0" y="0" class="f">Engine
+</tspan></text><path fill-rule="evenodd" class="e" d="m1161 44h168c3.3 0 6 2.7 6 6v78c0 3.3-2.7 6-6 6h-168c-3.3 0-6-2.7-6-6v-78c0-3.3 2.7-6 6-6z"/><text transform="translate(1178,90)"><tspan x="0" y="0" class="f">Data Minimization
+</tspan></text><text transform="translate(1285,90)"><tspan x="0" y="0" class="f">Layer
+</tspan></text><path fill-rule="evenodd" class="e" d="m1393 44h168c3.3 0 6 2.7 6 6v78c0 3.3-2.7 6-6 6h-168c-3.3 0-6-2.7-6-6v-78c0-3.3 2.7-6 6-6z"/><text transform="translate(1406,92)"><tspan x="0" y="0" class="f">Proof Generation
+</tspan></text><text transform="translate(1509,92)"><tspan x="0" y="0" class="f">Engine
+</tspan></text><path fill-rule="evenodd" class="e" d="m1627 44h168c3.3 0 6 2.7 6 6v78c0 3.3-2.7 6-6 6h-168c-3.3 0-6-2.7-6-6v-78c0-3.3 2.7-6 6-6z"/><text transform="translate(1656,85)"><tspan x="0" y="0" class="f">Response: Answer +
+</tspan></text><text transform="translate(1695,99)"><tspan x="0" y="0" class="f">Proof
+</tspan></text><path fill-rule="evenodd" class="e" d="m1854 42h168c3.3 0 6 2.7 6 6v78c0 3.3-2.7 6-6 6h-168c-3.3 0-6-2.7-6-6v-78c0-3.3 2.7-6 6-6z"/><text transform="translate(1869,90)"><tspan x="0" y="0" class="f">Verifier Receives
+</tspan></text><text transform="translate(1970,90)"><tspan x="0" y="0" class="f">Output
+</tspan></text><path fill-rule="evenodd" class="e" d="m930 255h168c3.3 0 6 2.7 6 6v78c0 3.3-2.7 6-6 6h-168c-3.3 0-6-2.7-6-6v-78c0-3.3 2.7-6 6-6z"/><text transform="translate(972,303)"><tspan x="0" y="0" class="f">Reject Request
+</tspan></text><path fill-rule="evenodd" class="a" d="m378 222h8"/><text transform="translate(587,149)"><tspan x="0" y="0" class="g">Yes
+</tspan></text><text transform="translate(700,284)"><tspan x="0" y="0" class="g">No
+</tspan></text><path fill-rule="evenodd" class="b" d="m767 94h78v-5h75"/><text transform="translate(813,85)"><tspan x="0" y="0" class="g">Yes
+</tspan></text><text transform="translate(818,173)"><tspan x="0" y="0" class="g">No
+</tspan></text><path fill-rule="evenodd" class="a" d="m1104 88h50"/><path fill-rule="evenodd" class="a" d="m1336 88h50"/><path fill-rule="evenodd" class="a" d="m1569 88h50"/></svg>
