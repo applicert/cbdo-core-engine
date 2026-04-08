@@ -1,10 +1,10 @@
 # Applicert – VMD Core Engine
 
 > 🚧 Reference implementation of a Verifiable Minimal Disclosure (VMD) system (spec v0.1) – not production-ready
->
-> This project was previously developed under the working term "CBDO" (Consent-Based Data Objects).
 
-**Consent-Based Data Object Core Engine** – the active execution layer that transforms W3C Verifiable Credentials into policy-enforced, query-responsive verification systems.
+> 📄 Read the VMD Whitepaper (v1.0): A new model for verifying truth without exposing data → [Download PDF](./docs/whitepaper/VMD-Whitepaper-v1.0.pdf)
+
+**Verifiable Minimal Disclosure Core Engine** – the active execution layer that transforms W3C Verifiable Credentials into a policy-enforced, query-responsive verification system.
 
 > *Verifiers ask questions. The engine answers them. Credential data never leaves.*
 
@@ -12,7 +12,6 @@
 **License:** Apache 2.0 (code) | CC0 (specification)  
 **Status:** v0.1 – Reference Implementation (stub proof generator)  
 **Spec:** [/spec/VMD-Core-Engine-Spec-v0.1.md](./spec/VMD-Core-Engine-Spec-v0.1.md)  
-**Whitepaper:** [/docs/VMD-Whitepaper-v1.0.pdf](./docs/VMD-Whitepaper-v1.0.pdf)
 
 ---
 
@@ -23,6 +22,24 @@ The Core Engine is the middleware between a user's verifiable credential and any
 Instead of exposing a credential field (e.g. date of birth), a verifier submits a structured query (e.g. "is this person over 18?"). The engine evaluates it internally and returns only a minimized, cryptographically provable answer: `true` or `false` + a proof.
 
 The date of birth never appears in any response. Ever.
+
+---
+
+## 📄 Documentation
+
+The VMD model is defined in the following documents:
+
+### Whitepaper (v1.0)
+Formal definition of the VMD model, architecture, and governance framework.
+
+- 📘 [Read (Markdown)](./docs/whitepaper/VMD-Whitepaper-v1.0.md)
+- 📄 [Download (PDF)](./docs/whitepaper/VMD-Whitepaper-v1.0.pdf)
+
+### Executive Summary
+Concise overview of the VMD model and its practical applications.
+
+- 📘 [Read (Markdown)](./docs/executive-summary/VMD-Executive-Summary-v1.0.md)
+- 📄 [Download (PDF)](./docs/executive-summary/VMD-Executive-Summary-v1.0.pdf)
 
 ---
 

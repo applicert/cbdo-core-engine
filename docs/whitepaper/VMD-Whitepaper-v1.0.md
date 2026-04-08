@@ -130,7 +130,7 @@ In this model, data becomes **accessible only through controlled, policy-enforce
 
 A VMD consists of three primary layers that enforce strict separation between data storage, policy definition, and execution logic.
 
-*![VMD_Internal_Architecture](./images/VMD_Internal_Architecture.svg)*
+*![VMD_Internal_Architecture](../images/VMD_Internal_Architecture.svg)*
 
 ## **4.1 Data Layer (Protected Data)**
 
@@ -148,7 +148,7 @@ Handles all interactions: query validation, consent enforcement, rule applicatio
 
 # **5\. Operational Flow**
 
-*![VMD_Query_Processing_Flow](./images/VMD_Query_Processing_Flow.svg)*
+*![VMD_Query_Processing_Flow](../images/VMD_Query_Processing_Flow.svg)*
 
 This flow represents the standard interaction pattern for all VMD queries, regardless of profile type:
 
@@ -193,7 +193,7 @@ VMD supports lawful and emergency access – legal warrants, medical emergencies
 
 Profiles define domain-specific implementations of the VMD model. 
 
-*![VMD_Profile_Interaction_Model](./images/VMD_Profile_Interaction_Model.svg)*
+*![VMD_Profile_Interaction_Model](../images/VMD_Profile_Interaction_Model.svg)*
 
 ## **7.1 AgePass**
 
@@ -352,7 +352,7 @@ This approach positions VMD as a natural evolution of ongoing pilots (including 
 # **11\. Cryptographic Foundations**
 
 VMD is built on well-established cryptographic techniques used in modern security infrastructure – including secure web browsing (TLS), digital identity frameworks, and government-grade authentication systems. This section explains how these techniques work together in the VMD model.
-*![VMD_Cryptographic_Verification_Flow](./images/VMD_Cryptographic_Verification_Flow.svg)*
+*![VMD_Cryptographic_Verification_Flow](../images/VMD_Cryptographic_Verification_Flow.svg)*
 
 *This diagram illustrates how VMD combines selective disclosure (BBS+), zero-knowledge proofs, and threshold cryptography to enable verifiable answers without exposing underlying data.*
 
